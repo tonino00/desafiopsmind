@@ -1,0 +1,27 @@
+.listRow {
+	margin-bottom: 30px;
+}
+
+.listRow__area {
+	overflow-x: hidden;
+	padding-left: 30px;
+}
+
+.listRow__list {
+	transition: all ease 0.5s;
+}
+
+.listRow__item {
+	display: inline-block;
+	width: 250px;
+}
+
+.listRow__item img {
+	width: 100%;
+	transform: scale(0.9);
+	transition: all ease 0.5s;
+}
+
+.listRow__item img:hover {
+	transform: scale(1);
+}
