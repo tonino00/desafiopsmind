@@ -1,0 +1,124 @@
+.button {
+	display: inline-block;
+	margin: 4px 2px;
+	background-color: transparent;
+	font-size: 14px;
+	padding-left: 32px;
+	padding-right: 32px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button:hover {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.search-container {
+	position: fixed;
+	display: inline-block;
+	margin: 4px 70px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+	z-index: 999;
+	right: 0;
+}
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+	font-size: 18px;
+}
+
+.searchbutton {
+	position: absolute;
+	display: block;
+	font-size: 22px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	right: -2px;
+	border-radius: 50px;
+}
+
+.searchbutton a {
+	color: #ffffff;
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.search {
+	position: absolute;
+	left: 49px;
+	background-color: #353535;
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 363px;
+	padding: 0 16px 0 0;
+}
+
+.expandright {
+	left: auto;
+	right: 60px;
+	border: 1px solid #353535;
+	color: #fff;
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+
+@media (max-width: 760px) {
+	.search-container {
+		position: fixed;
+		display: inline-block;
+		margin: 4px 2px;
+		height: 50px;
+		width: 50px;
+		vertical-align: bottom;
+		z-index: 999;
+		left: 67%;
+	}
+	.search:focus {
+		width: 250px;
+		padding: 0 16px 0 0;
+	}
+	.expandright {
+		left: auto;
+		right: 43px;
+		border: 1px solid #353535;
+		color: #fff;
+	}
+}
