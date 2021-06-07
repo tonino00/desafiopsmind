@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 
 const FeaturedMovie = ({ item }) => {
 	let firstDate = new Date(item.release_date);
@@ -8,10 +8,6 @@ const FeaturedMovie = ({ item }) => {
 		genres.push(item.genres[i].name);
 	}
 
-	// let description = item.overview;
-	// if (description.length >= 200) {
-	// 	description = description.substring(0, 200) + '...';
-	// }
 	return (
 		<section
 			className="featured"
@@ -40,7 +36,7 @@ const FeaturedMovie = ({ item }) => {
 						</a>
 					</div>
 					<div className="featured__genres">
-						<strong>Genres:</strong> {genres.join(' , ')}
+						<strong>Gêneros:</strong> {genres.join(' , ')}
 					</div>
 				</div>
 			</div>
