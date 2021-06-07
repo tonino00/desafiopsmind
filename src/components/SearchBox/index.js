@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchIcon from '@material-ui/icons/Search';
-import './style.css';
+import './style.scss';
 
 const SearchBox = (props) => {
 	return (
@@ -13,7 +13,7 @@ const SearchBox = (props) => {
 				type="search"
 				placeholder="Títulos, gêneros e gente"
 			></input>
-			<label class="button searchbutton" for="searchleft">
+			<label className="button searchbutton" for="searchleft">
 				<a className="searchbutton">
 					<SearchIcon className="mglass" />
 				</a>

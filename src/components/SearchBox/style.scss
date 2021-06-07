@@ -51,6 +51,7 @@
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	top: 5px;
 	right: -2px;
 	border-radius: 50px;
 }
@@ -94,6 +95,7 @@
 	right: 60px;
 	border: 1px solid #353535;
 	color: #fff;
+	top: 5px;
 }
 
 .expandright:focus {
@@ -117,7 +119,7 @@
 	}
 	.expandright {
 		left: auto;
-		right: 43px;
+		right: 40px;
 		border: 1px solid #353535;
 		color: #fff;
 	}
