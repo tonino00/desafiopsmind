@@ -56,8 +56,8 @@ const MovieDetail = (props) => {
 				<h2>Meus Favoritos</h2>
 				<div className="favoritesRow__area">
 					<div className="favoritesRow__list">
-						{favoritesMovies.map((movie) => (
-							<div className="favoritesRow__item" key={movie.MovieId}>
+						{favoritesMovies.map((movie, key) => (
+							<div className="favoritesRow__item" key={key}>
 								<img
 									src={`https://image.tmdb.org/t/p/w300${movie.location.MoviePoster}`}
 									alt=""
