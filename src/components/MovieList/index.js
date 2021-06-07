@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './style.css';
+import { Link } from 'react-router-dom';
+import './style.scss';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -40,10 +41,23 @@ const MovieList = (props) => {
 					{props.movies.length > 0 &&
 						props.movies.map((movie, key) => (
 							<div className="listRow__item" key={key}>
-								<img
-									src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
-									alt={movie.original_title}
-								/>
+								<Link
+									to={{
+										pathname: '/detalhes',
+										MoviePoster: movie.poster_path,
+										MovieBackdrop: movie.backdrop_path,
+										MovieTitle: movie.original_title,
+										FirstDate: movie.release_date,
+										Overview: movie.overview,
+										Vote: movie.vote_average,
+										MovieId: movie.id,
+									}}
+								>
+									<img
+										src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+										alt={movie.original_title}
+									/>
+								</Link>
 							</div>
 						))}
 				</div>
