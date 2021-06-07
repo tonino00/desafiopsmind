@@ -1,0 +1,67 @@
+.listRow {
+	margin-bottom: 30px;
+}
+
+.listRow h2 {
+	margin: 30px 0 0 30px;
+}
+
+.listRow__area {
+	overflow-x: hidden;
+	padding-left: 30px;
+}
+
+.listRow__list {
+	transition: all ease 0.5s;
+}
+
+.listRow__item {
+	display: inline-block;
+	width: 150px;
+}
+
+.listRow__item img {
+	width: 100%;
+	transform: scale(0.9);
+	transition: all ease 0.5s;
+}
+
+.listRow__item img:hover {
+	transform: scale(1);
+}
+
+.listRow__left,
+.listRow__right {
+	position: absolute;
+	width: 40px;
+	height: 225px;
+	z-index: 99;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+	opacity: 0;
+	transition: all ease 0.5s;
+}
+
+.listRow__left {
+	left: 0;
+}
+
+.listRow__right {
+	right: 0;
+}
+
+.listRow:hover .listRow__left,
+.listRow:hover .listRow__right {
+	opacity: 1;
+}
+
+@media (max-width: 760px) {
+	.listRow__left,
+	.listRow__right {
+		opacity: 1;
+	}
+}
