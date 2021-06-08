@@ -1,4 +1,4 @@
-# Descpription
+# Description
 
 Desafio PSMIND para desenvolver uma aplicação WPA.
 
