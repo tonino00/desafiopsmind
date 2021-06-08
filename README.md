@@ -1,6 +1,8 @@
 # Description
 
-Desafio PSMIND para desenvolver uma aplicação WPA.
+Desafio PSMIND para desenvolver uma aplicação WPA usando react.
+
+<img width="1680" alt="Captura de Tela 2021-06-07 às 23 38 35" src="https://user-images.githubusercontent.com/4805292/121119294-bacd6200-c7f1-11eb-84de-e32eda416ce0.png">
 
 
 # Getting Started with Create React App
