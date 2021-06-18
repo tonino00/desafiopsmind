@@ -9,12 +9,23 @@ const MovieDetail = (props) => {
 	const [favoritesMovies, setFavoriteMovies] = useState([]);
 
 	const Addfavorite = (props) => {
-		setFavoriteMovies(favoritesMovies.concat(props));
+		setFavoriteMovies([...favoritesMovies, props]);
 	};
 
 	const removeFavorite = (props) => {
 		setFavoriteMovies(favoritesMovies.filter((movie) => movie !== props));
 	};
+
+	useEffect(() => {
+		const favoritesMovies = JSON.parse(localStorage.getItem('favoritesMovies'));
+		if (favoritesMovies) {
+			setFavoriteMovies(favoritesMovies);
+		}
+	}, []);
+
+	useEffect(() => {
+		localStorage.setItem('favoritesMovies', JSON.stringify(favoritesMovies));
+	}, [favoritesMovies]);
 
 	return (
 		<div className="movie_card" id="bright">
