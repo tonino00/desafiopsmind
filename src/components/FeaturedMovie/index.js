@@ -38,7 +38,7 @@ const FeaturedMovie = ({ item }) => {
 						<a className="featured__bWatch" onClick={onOpenModal}>
 							► Assistir
 						</a>
-						<a className="featured__bRecord">+ Minha Lista</a>
+						<a className="featured__bRecord">+ Mais informações</a>
 					</div>
 					<div className="featured__genres">
 						<strong>Gêneros:</strong> {genres.join(' , ')}

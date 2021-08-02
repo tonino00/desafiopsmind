@@ -16,7 +16,11 @@ const Home = () => {
 		const response = await fetch(url);
 		const responseJson = await response.json();
 
-		setMovies(responseJson.results);
+		try {
+			setMovies(responseJson.results);
+		} catch (err) {
+			console.log(err);
+		}
 	};
 
 	useEffect(() => {

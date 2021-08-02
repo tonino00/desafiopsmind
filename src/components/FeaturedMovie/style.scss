@@ -88,7 +88,7 @@
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 	.featured {
 		height: 90vh;
 
@@ -117,11 +117,14 @@
 	}
 	.react-responsive-modal-modal {
 		top: -2.5em !important;
+		width: 100%;
+		margin: 0 !important;
 	}
 }
 
 .react-responsive-modal-modal {
-	top: -12.5em;
+	top: -4.5em;
+	display: inline-block;
 	padding: 0 !important;
 	background: transparent !important;
 }

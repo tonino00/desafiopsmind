@@ -43,7 +43,7 @@ const MovieList = (props) => {
 							<div className="listRow__item" key={key}>
 								<Link
 									to={{
-										pathname: '/detalhes',
+										pathname: '/detail',
 										MoviePoster: movie.poster_path,
 										MovieBackdrop: movie.backdrop_path,
 										MovieTitle: movie.original_title,

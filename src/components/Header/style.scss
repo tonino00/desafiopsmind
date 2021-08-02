@@ -17,8 +17,31 @@ header.effect {
 	background-color: #141414;
 }
 
+.header__menu {
+	display: flex;
+}
+.header__tab-navigation {
+	list-style: none;
+	margin-right: 25px;
+}
+.header__tab-navigation a {
+	text-decoration: none;
+	margin: 0 15px 0 0;
+	font-weight: 700;
+}
+
+.btn {
+	color: #b3b3b3;
+}
+
+.active,
+.btn:hover {
+	color: #f3f3f3;
+}
+
 .header__logo {
 	height: 25px;
+	margin-top: 15px;
 }
 .header__logo img {
 	height: 100%;
@@ -31,4 +54,14 @@ header.effect {
 .header__user img {
 	height: 100%;
 	border-radius: 3px;
+}
+
+@media (max-width: 760px) {
+	.header__tab-navigation {
+		display: none;
+	}
+
+	input[type='search'] {
+		text-indent: 10px;
+	}
 }
